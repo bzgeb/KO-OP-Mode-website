@@ -1,4 +1,6 @@
 class ProjectsController < ApplicationController
+  before_filter :basic_auth, :only => [:new, :edit, :create, :update, :destroy]
+
   # GET /projects
   # GET /projects.json
   def index
@@ -78,6 +80,12 @@ class ProjectsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to projects_url }
       format.json { head :no_content }
+    end
+  end
+
+  def basic_auth
+    authenticate_or_request_with_http_basic do |id, password|
+        id == ENV['AUTH_ID'] && password == ENV["AUTH_PASSWORD"]
     end
   end
 end
