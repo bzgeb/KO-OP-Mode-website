@@ -1,5 +1,5 @@
 class Project < ActiveRecord::Base
-  attr_accessible :name
+  attr_accessible :name, :thumbnail
   has_attached_file :thumbnail,
     :storage => :s3,
     :bucket => ENV['S3_BUCKET_NAME'],
