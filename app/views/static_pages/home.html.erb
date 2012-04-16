@@ -11,9 +11,15 @@
      </div>
      <!-- #footer -->
 
-     <!--<div id="project-container">
+     <div id="project-container">
         <h2>Projects</h2>
-     </div>-->
+        <% @projects.each do |project| %>
+        <div id="project">
+            <div class="title"> <%= project.name %> </div>
+            <div class="p-image"> <%= image_tag(project.thumbnail.url, :size=>"100x100") %> </div>
+        </div>
+        <% end %>
+     </div>
    </div>
  </div>
  <!-- wrapper -->
