@@ -1,3 +1,4 @@
 secret_token.rb
 s3.rb
 auth.rb
+mailchimp.rb

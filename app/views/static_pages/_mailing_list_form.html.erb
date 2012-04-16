@@ -1,0 +1,18 @@
+<%= form_tag('list_subscribe') do %>
+    <div class="field">
+        <%= label_tag(:first_name, "First Name:") %>
+        <%= text_field_tag(:first_name) %>
+    </div>
+
+    <div class="field">
+        <%= label_tag(:last_name, "Last Name:") %>
+        <%= text_field_tag(:last_name) %>
+    </div>
+
+    <div class="field">
+        <%= label_tag(:email, "Email:") %>
+        <%= text_field_tag(:email) %>
+    </div>
+
+    <%= submit_tag("Subscribe") %>
+<% end %>
