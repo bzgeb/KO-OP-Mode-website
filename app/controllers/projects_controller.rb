@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  before_filter :basic_auth, :only => [:new, :edit, :create, :update, :destroy]
+  before_filter :basic_auth, :only => [:new, :edit, :create, :update, :destroy, :index, :show]
 
   # GET /projects
   # GET /projects.json
