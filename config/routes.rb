@@ -1,4 +1,6 @@
 KoOpmode::Application.routes.draw do
+  resources :projects
+
   get "static_pages/home"
 
   # The priority is based upon order of creation:
