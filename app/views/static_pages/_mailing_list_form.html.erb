@@ -1,17 +1,17 @@
 <%= form_tag('mailing_list/subscribe') do %>
     <div class="field">
-        <%= label_tag(:first_name, "First Name:") %>
-        <%= text_field_tag(:first_name) %>
+        <%= label_tag :first_name, "First Name:", :class => 'label' %>
+        <%= text_field_tag(:first_name, nil, :class => 'textfield') %>
     </div>
 
     <div class="field">
-        <%= label_tag(:last_name, "Last Name:") %>
-        <%= text_field_tag(:last_name) %>
+        <%= label_tag :last_name, "Last Name:", :class => 'label' %>
+        <%= text_field_tag(:last_name, nil, :class => 'textfield') %>
     </div>
 
     <div class="field">
-        <%= label_tag(:email, "Email:") %>
-        <%= text_field_tag(:email) %>
+        <%= label_tag :email, "Email:", :class => 'label' %>
+        <%= text_field_tag(:email, nil, :class => 'textfield') %>
     </div>
 
     <%= submit_tag("Subscribe") %>
