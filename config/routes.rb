@@ -2,6 +2,7 @@ KoOpmode::Application.routes.draw do
   resources :projects
 
   get "static_pages/home"
+  post "mailing_list/subscribe"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -18,8 +18,16 @@
             <div class="title"> <%= project.name %> </div>
             <div class="p-image"> <%= image_tag(project.thumbnail.url, :size=>"100x100") %> </div>
         </div>
+        <!-- Project -->
         <% end %>
      </div>
+     <!-- Project Container -->
+
+     <div id="mailing-list">
+        <h2>Mailing List</h2>
+        <%= render 'mailing_list_form' %>
+     </div>
+     <!-- Mailing List -->
    </div>
  </div>
  <!-- wrapper -->
