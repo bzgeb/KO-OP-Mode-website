@@ -5,6 +5,7 @@ gem 'paperclip', "~> 3.0"
 gem 'aws-sdk'
 gem 'aws-s3'
 gem 'gibbon'
+gem 'fancybox-rails'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'

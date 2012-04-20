@@ -6,7 +6,7 @@
    </div>
    <div id="col-three">
      <div id="menu">
-        <p class="item">Contact | Mailing List</p>
+         <div class="item">Contact | <a id="inline" href="#mailing-list">Mailing List</a></div>
      </div>
      <!-- #menu -->
 
@@ -32,11 +32,13 @@
      </div>
      <!-- Project Container -->
 
-     <div id="mailing-list">
-        <h2>Mailing List</h2>
-        <%= render 'mailing_list_form' %>
+     <div style="display:none">
+         <div id="mailing-list">
+            <h2>Mailing List</h2>
+            <%= render 'mailing_list_form' %>
+         </div>
+         <!-- #mailing-list -->
      </div>
-     <!-- Mailing List -->
    </div>
  </div>
  <!-- wrapper -->
