@@ -59,59 +59,9 @@ a {
 	color: #666666;
 }
 
-a:hover {
-	text-decoration: none;
-	color: #000000;
-}
-
 img {
 	border: none;
 }
-
-/* Container */
-.container {
-	padding-top: 20px;
-}
-
-/* Boxed */
-.boxed {
-}
-
-.boxed .title {
-	padding: 10px;
-	font-size: 1em;
-}
-
-.boxed .content {
-	padding: 10px;
-}
-
-/* Logo */
-/*
-#logo {
-	width: 680px;
-	height: 50px;
-	margin: 0 auto;
-	padding: 40px 0 0 0;
-}
-
-#logo h1 {
-	float: left;
-	letter-spacing: -2px;
-	font-size: 3em;
-}
-
-#logo h2 {
-	float: left;
-	font-size: 1em;
-}
-
-#logo a {
-	text-decoration: none;
-	text-transform: lowercase;
-	font-weight: normal;
-}
-*/
 
 /* Wrapper */
 #wrapper {
@@ -120,26 +70,12 @@ img {
 	margin: 0 auto;
 }
 
-/* Column One */
-#col-one {
-	float: left;
-	width: 20px;
-	padding-top: 10px;
-}
-
-/* Column Two */
-#col-two {
-	float: right;
-	width: 20px;
-	margin-left: 10px;
-	padding-top: 10px;
-}
-
 /* Column Three */
 #col-three {
 	float: left;	
-	width: 640px;
-	margin-left: 10px;
+	width: 690px;
+    margin-left: auto;
+    margin-right: auto;
 	padding-top: 10px;
 }
 
@@ -149,29 +85,43 @@ img {
 }
 
 #footer p {
-	margin: 0;
-	width: 680px;
 	margin: 0 auto;
 	font-size: x-small;
 }
 
 /* Project */
-#project-container {
+#project-division {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
     border-top: 1px solid grey;
-    margin: 40px 0px 0px 0px;
+    width: 90%;
+}
+
+#project-container {
+    width: 100%;
+    margin: 0px auto;
 }
 
 #project {
-    margin: 20px 50px 20px 0px;
+    width: 230px;
     float:left;
 }
 
 #project .title {
     font-size: normal;
     text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
 }
 
 #project .p-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 130px;
 }
 
 /* Mailing list */
