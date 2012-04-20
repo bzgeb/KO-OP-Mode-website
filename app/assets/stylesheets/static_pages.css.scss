@@ -31,6 +31,8 @@ p, blockquote, ul, ol {
 }
 
 p {
+    font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 blockquote {
@@ -113,6 +115,7 @@ img {
 }
 
 #project .title {
+    font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
     font-size: normal;
     text-align: right;
     margin-left: auto;
@@ -165,6 +168,8 @@ img {
 
 /* Menu */
 #menu {
+    font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+    font-size: normal;
     text-align: right;
     margin-right: 60px;
 }
