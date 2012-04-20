@@ -1,24 +1,35 @@
 <% provide(:title, 'Home') %>
 <div id="wrapper">
-   <div id="col-one">
-   </div>
-   <div id="col-two">
-   </div>
    <div id="col-three">
-     <img src="/assets/ko-opheader.png" alt="">
-     <div id="footer">
-         <p id="legal">Copyright &copy; 2012</p>
+     <div id="menu">
+         <div class="item"><a href="mailto:saleem@ko-opmode.com">Contact</a> | <a id="inline" href="#mailing-list">Mailing List</a></div>
      </div>
-     <!-- #footer -->
+     <!-- #menu -->
 
+     <div id="about">
+        <img class="logo" src="/assets/ko-opheader.png" alt="">
+        <p class="text">KO-OP Mode is a recently formed studio in Montreal, focused on collaboration and game making. We're dedicated to forming a "record label" of high quality games, closely working with partners looking to establish themselves as passionate, experimental and engaging game makers.</p>
+     </div>
+     <!-- #about -->
+
+     <div id="project-division"></div>
      <div id="project-container">
-        <h2>Projects</h2>
         <% @projects.each do |project| %>
         <div id="project">
+            <div class="p-image"> <%= image_tag(project.thumbnail.url, :size=>"200x130") %> </div>
             <div class="title"> <%= project.name %> </div>
-            <div class="p-image"> <%= image_tag(project.thumbnail.url, :size=>"100x100") %> </div>
         </div>
+        <!-- Project -->
         <% end %>
+     </div>
+     <!-- Project Container -->
+
+     <div style="display:none">
+         <div id="mailing-list">
+            <h2>Mailing List</h2>
+            <%= render 'mailing_list_form' %>
+         </div>
+         <!-- #mailing-list -->
      </div>
    </div>
  </div>
