@@ -93,15 +93,18 @@ img {
 #project-division {
     margin-right: auto;
     margin-left: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
     border-top: 1px solid grey;
     width: 90%;
+    height: 50px;
+    clear: both;
 }
 
 #project-container {
     width: 100%;
     margin: 0px auto;
+    clear: both;
 }
 
 #project {
@@ -142,18 +145,10 @@ img {
     width: 125px;
 }
 
-/* Navigation */
-#navigation {
-    
-}
-
-#navigation .item {
-
-}
-
 /* About */
 #about {
-
+    margin-bottom: 100px;
+    height: 200px;
 }
 
 #about .logo {
