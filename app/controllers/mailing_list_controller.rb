@@ -9,5 +9,6 @@ class MailingListController < ApplicationController
                                                 :LNAME => params['last_name']}})
         @header = "Failed!"
         @header = "Subscribed!" if @r == true
+        redirect_to :root
     end
 end
