@@ -19,8 +19,10 @@
         <h2>Projects</h2>
         <% @projects.each do |project| %>
         <div id="project">
-            <%= image_tag(project.thumbnail.url, :size=>"300x190") %>
-            <div class="title"> <%= project.name %> </div>
+            <%= link_to "description/#{project.id}", {:id=>'inline'} do %>
+                <%= image_tag(project.thumbnail.url, :size=>"300x190") %>
+                <div class="title"> <%= project.name %> </div>
+            <% end %>
         </div>
         <!-- Project -->
         <% end %>
