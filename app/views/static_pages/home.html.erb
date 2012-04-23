@@ -16,6 +16,7 @@
 
      <div id="project-division"></div>
      <div id="project-container">
+        <h2>Projects</h2>
         <% @projects.each do |project| %>
         <div id="project">
             <%= image_tag(project.thumbnail.url, :size=>"300x190") %>
