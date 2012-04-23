@@ -110,24 +110,29 @@ img {
 }
 
 #project {
-    width: 230px;
+    width: 340px;
     float:left;
+    margin-bottom: 75px;
 }
 
 #project .title {
-    font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
-    font-size: normal;
-    text-align: right;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: black;
+    color: #FFF;
+    width: 170px;
+    height: 28px;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: -20px;
 }
 
-#project .p-image {
+#project .image {
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
-    height: 130px;
+    width: 100%;
 }
 
 /* Mailing list */
@@ -152,6 +157,7 @@ img {
 #about {
     margin-bottom: 100px;
     height: 200px;
+    float: left;
 }
 
 #about .logo {
@@ -161,7 +167,7 @@ img {
 }
 
 #about .text {
-    width: 60%;
+    width: 40%;
     float: left;
     margin-top: 40px;
 }
@@ -169,8 +175,11 @@ img {
 /* Menu */
 #menu {
     font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
-    font-size: normal;
-    text-align: right;
-    margin-right: 60px;
+    font-size: large;
+    text-align: left;
+    float:left;
+    width: 20%;
+    margin-top: 100px;
+    margin-left: 25px;
 }
 
