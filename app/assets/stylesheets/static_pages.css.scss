@@ -58,7 +58,16 @@ ol li {
 }
 
 a {
-	color: #666666;
+	color: #000;
+}
+
+a:visited {
+	color: #000;
+}
+
+a:hover {
+    background-color: #FFF;
+    color: #999;
 }
 
 img {
@@ -110,7 +119,7 @@ img {
 }
 
 #project-container h2 {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: Georgia, Helvetica, Arial, "Lucida Grande", sans-serif;
     margin-bottom: 50px;
     font-size: 32px;
 }
@@ -180,11 +189,11 @@ img {
 /* Menu */
 #menu {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: large;
+    font-size: x-large;
     text-align: left;
     float:left;
     width: 20%;
     margin-top: 100px;
-    margin-left: 25px;
+    margin-left: 29px;
 }
 
