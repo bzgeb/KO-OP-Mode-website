@@ -13,6 +13,7 @@
     <div class="field">
         <%= label_tag :email, "Email:", :class => 'label' %>
         <%= text_field_tag(:email, nil, :class => 'textfield') %>
+        <span style="color:red;">*</span>required
     </div>
 
     <%= submit_tag("Subscribe") %>
