@@ -4,7 +4,12 @@
 $(document).ready ->
     $("a#inline").fancybox({
         'autoDimensions':false,
-        'width':500
+        'width':500,
+        'height':225
     })
 
-    $("a#mailinglist").fancybox()
+    $("a#mailinglist").fancybox({
+        'autoDimensions':false,
+        'height': 260,
+        'width': 300
+    })
