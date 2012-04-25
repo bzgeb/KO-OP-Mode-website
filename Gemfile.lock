@@ -179,7 +179,7 @@ DEPENDENCIES
   gibbon
   jquery-rails (= 2.0.0)
   paperclip (~> 3.0)
-  pg (= 0.12.2)
+  pg (~> 0.12.2)
   rails (= 3.2.3)
   rspec-rails (= 2.9.0)
   sass-rails (= 3.2.4)
