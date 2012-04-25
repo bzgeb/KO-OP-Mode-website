@@ -114,15 +114,34 @@ img {
 	font-size: small;
 }
 
+#footer .text {
+    width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #footer .friends {
     text-align: left;
-    margin-left: 15px;
+    margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
     margin-bottom: auto;
-    width: 80%;
+    width: 60%;
     height: 85%;
     float: left;
+    position: relative;
+}
+
+#footer .twitter {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: auto;
+    width: 40%;
+    height: 85%;
+    float: left;
+    position: relative;
 }
 
 #footer .copy {
@@ -155,7 +174,7 @@ img {
 }
 
 #project-container h2 {
-    font-family: Georgia, Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
     margin-bottom: 50px;
     font-size: 32px;
 }
