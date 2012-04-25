@@ -6,7 +6,6 @@ gem 'aws-sdk'
 gem 'aws-s3'
 gem 'gibbon'
 gem 'fancybox-rails'
-gem 'pg', '0.12.2'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
