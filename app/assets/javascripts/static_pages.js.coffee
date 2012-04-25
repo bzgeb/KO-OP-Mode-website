@@ -13,3 +13,13 @@ $(document).ready ->
         'height': 260,
         'width': 300
     })
+
+    $("#mail-form")
+        .bind("ajax:complete", (xhr, status) ->
+            $("#response").html("Complete!"))
+        .bind("ajax:beforeSend", ->
+            $("#response").html("Sending..."))
+        .bind("ajax:success", (data, status, xhr) ->
+            $("#response").html("Success"))
+        .bind("ajax:error", (xhr, status, data) ->
+            $("#response").html("Error!"))

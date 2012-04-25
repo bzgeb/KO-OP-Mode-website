@@ -7,8 +7,12 @@ class MailingListController < ApplicationController
                                 :merge_vars => {:EMAIL => params['email'],
                                                 :FNAME => params['first_name'],
                                                 :LNAME => params['last_name']}})
-        @header = "Failed!"
-        @header = "Subscribed!" if @r == true
-        redirect_to :root
+#        @header = "Failed!"
+#        @header = "Subscribed!" if @r == true
+        if @r == true
+            render "subscribed"
+        else
+            render "error"
+        end
     end
 end
