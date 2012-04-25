@@ -88,4 +88,13 @@ class ProjectsController < ApplicationController
         id == ENV['AUTH_ID'] && password == ENV["AUTH_PASSWORD"]
     end
   end
+
+  def description
+    @description = Project.find(params[:id]).description
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @project }
+    end
+  end
 end

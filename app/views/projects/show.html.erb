@@ -6,11 +6,14 @@
 </p>
 
 <p>
-
   <b>Image:</b>
   <%= image_tag(@project.thumbnail.url) %>
 </p>
 
+<p>
+  <b>Description:</b>
+  <%= @project.description %>
+</p>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Delete', project_path(@project), :method => :delete %> |

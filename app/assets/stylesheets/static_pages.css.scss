@@ -31,8 +31,8 @@ p, blockquote, ul, ol {
 }
 
 p {
-    font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 16px;
 }
 
 blockquote {
@@ -58,7 +58,16 @@ ol li {
 }
 
 a {
-	color: #666666;
+	color: #000;
+}
+
+a:visited {
+	color: #000;
+}
+
+a:hover {
+    background-color: #FFF;
+    color: #999;
 }
 
 img {
@@ -83,12 +92,38 @@ img {
 
 /* Footer */
 #footer {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	clear: both;
+    background: #45A7CC;
+    width: 100%;
+    height: 40px;
 }
 
 #footer p {
 	margin: 0 auto;
-	font-size: x-small;
+	font-size: small;
+}
+
+#footer .friends {
+    text-align: left;
+    margin-left: 15px;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: auto;
+    width: 80%;
+    height: 85%;
+    float: left;
+}
+
+#footer .copy {
+    text-align: right;
+    color: #000;
+    font-size: x-small;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-top: 5px;
+    float: right;
+    width: 17%;
 }
 
 /* Project */
@@ -99,7 +134,7 @@ img {
     margin-bottom: auto;
     border-top: 1px solid grey;
     width: 90%;
-    height: 50px;
+    height: 10px;
     clear: both;
 }
 
@@ -109,25 +144,35 @@ img {
     clear: both;
 }
 
+#project-container h2 {
+    font-family: Georgia, Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
 #project {
-    width: 230px;
+    width: 340px;
     float:left;
+    margin-bottom: 75px;
 }
 
 #project .title {
-    font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
-    font-size: normal;
-    text-align: right;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 22px;
+    text-align: center;
+    background-color: black;
+    color: #FFF;
+    width: 170px;
+    height: 28px;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: -20px;
 }
 
-#project .p-image {
+#project .image {
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
-    height: 130px;
+    width: 100%;
 }
 
 /* Mailing list */
@@ -152,6 +197,7 @@ img {
 #about {
     margin-bottom: 100px;
     height: 200px;
+    float: left;
 }
 
 #about .logo {
@@ -161,16 +207,19 @@ img {
 }
 
 #about .text {
-    width: 60%;
+    width: 40%;
     float: left;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 /* Menu */
 #menu {
-    font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
-    font-size: normal;
-    text-align: right;
-    margin-right: 60px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: x-large;
+    text-align: left;
+    float:left;
+    width: 20%;
+    margin-top: 100px;
+    margin-left: 29px;
 }
 

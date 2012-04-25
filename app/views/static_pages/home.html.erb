@@ -1,23 +1,28 @@
 <% provide(:title, 'Home') %>
 <div id="wrapper">
    <div id="col-three">
-     <div id="menu">
-         <div class="item"><a href="mailto:saleem@ko-opmode.com">Contact</a> | <a id="inline" href="#mailing-list">Mailing List</a></div>
-     </div>
-     <!-- #menu -->
 
      <div id="about">
         <img class="logo" src="/assets/ko-opheader.png" alt="">
         <p class="text">KO-OP Mode is a recently formed studio in Montreal, focused on collaboration and game making. We're dedicated to forming a "record label" of high quality games, closely working with partners looking to establish themselves as passionate, experimental and engaging game makers.</p>
+     <div id="menu">
+         <div class="item"><a href="mailto:saleem@ko-opmode.com">Contact</a></div>
+         <div class="item"><a id="inline" href="#mailing-list">Mailing List</a></div>
+     </div>
+     <!-- #menu -->
+
      </div>
      <!-- #about -->
 
      <div id="project-division"></div>
      <div id="project-container">
+        <h2>Projects</h2>
         <% @projects.each do |project| %>
         <div id="project">
-            <div class="p-image"> <%= image_tag(project.thumbnail.url, :size=>"200x130") %> </div>
-            <div class="title"> <%= project.name %> </div>
+            <%= link_to "description/#{project.id}", {:id=>'inline'} do %>
+                <%= image_tag(project.thumbnail.url, :size=>"300x190") %>
+                <div class="title"> <%= project.name %> </div>
+            <% end %>
         </div>
         <!-- Project -->
         <% end %>
@@ -34,5 +39,15 @@
    </div>
  </div>
  <!-- wrapper -->
- 
+
+<div id="footer">
+  <div class="friends">Our Friends! 
+  <a href="#">Mount Royal Game Society</a> | 
+  <a href="#">OBX</a> | 
+  <a href="#">Technoculture Art and Games</a> | 
+  <a href="#">Sauropod Studio</a> | 
+  <a href="#">Phosfiend Systems</a>
+  </div>
+  <div class="copy">Copyright &copy; 2012 KO-OP Mode Inc.</div>
+</div>
 
