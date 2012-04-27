@@ -10,9 +10,9 @@ class MailingListController < ApplicationController
 #        @header = "Failed!"
 #        @header = "Subscribed!" if @r == true
         if @r == true
-            render "subscribed"
+            render :partial => "subscribed"
         else
-            render "error"
+            render :partial => "error"
         end
     end
 end
