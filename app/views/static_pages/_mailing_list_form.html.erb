@@ -1,4 +1,4 @@
-<%= form_tag('mailing_list/subscribe') do %>
+<%= form_tag('mailing_list/subscribe', {:remote=>true, :class=>"mail-form", :id=>'mail-form'}) do %>
     <p>The mailing list is a great way to stay in touch and follow project updates and releases by KO-OP Mode. We promise to never spam or share your information.</p>
     <div class="field">
         <%= label_tag :first_name, "First Name:", :class => 'label' %>
@@ -16,5 +16,8 @@
         <span style="color:red;">*</span>required
     </div>
 
+    <div id="response">
+
+    </div>
     <%= submit_tag("Subscribe") %>
 <% end %>
