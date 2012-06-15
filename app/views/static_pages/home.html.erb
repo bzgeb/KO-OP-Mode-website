@@ -1,8 +1,19 @@
 <% provide(:title, 'Home') %>
 <div class="container">
     <header>
-        <%= image_tag("/assets/ko-opheader.png", :size=>"168x215") %>
-        <g:plusone></g:plusone>
+        <div class="row" style="padding-top:26px">
+            <div class="span4">
+                <%= image_tag("/assets/ko-opheader.png", :size=>"168x215") %>
+            </div>
+            <div class="span8" style="text-align:right">
+                <form class="form-inline">
+                    <input type="text" placeholder="Mailing List">
+                    <button type="submit" class="subscribe">Subscribe</button>
+                    <a href="#"><%= image_tag("/assets/twitter_icon2.jpg", :size=>"18x14") %></a>
+                    <a href="#"><%= image_tag("/assets/ko-opheader.png", :size=>"24x24") %></a>
+                </form>
+            </div>
+        </div>
     </header>
 
     <section>
