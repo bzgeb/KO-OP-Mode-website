@@ -1,70 +1,54 @@
 <% provide(:title, 'Home') %>
-<div id="wrapper">
-   <div id="col-three">
+<div class="container">
+    <header>
+        <%= image_tag("/assets/ko-opheader.png", :size=>"168x215") %>
+    </header>
 
-     <div id="about">
-        <img class="logo" src="/assets/ko-opheader.png" alt="">
-        <p class="text">KO-OP Mode is a recently formed studio in Montreal, focused on collaboration and game making. We're dedicated to forming a "record label" of high quality games, closely working with partners looking to establish themselves as passionate, experimental and engaging game makers.</p>
-     <div id="menu">
-         <div class="item"><a href="mailto:contact@ko-opmode.com">Contact</a></div>
-         <div class="item"><a id="mailinglist" href="#mailing-list">Mailing List</a></div>
-     </div>
-     <!-- #menu -->
+    <section>
+        <div class="row">
+            <div class="span6">
+                <h2 class="title"><%= @projects[0].name %></h2>
+                <%= image_tag(@projects[0].thumbnail.url, :size=>"600x380") %>
+            </div>
 
-     </div>
-     <!-- #about -->
-
-     <div id="project-division"></div>
-     <div id="project-container">
-        <h2>Projects</h2>
-        <% @projects.each do |project| %>
-        <div id="project">
-            <%= link_to "description/#{project.id}", {:id=>'inline'} do %>
-                <%= image_tag(project.thumbnail.url, :size=>"300x190") %>
-                <div class="title"> <%= project.name %> </div>
-            <% end %>
+            <div class="span6">
+                <h2 class="title"><%= @projects[1].name %></h2>
+                <%= image_tag(@projects[1].thumbnail.url, :size=>"600x380") %>
+            </div>
         </div>
-        <!-- Project -->
-        <% end %>
-     </div>
-     <!-- Project Container -->
+    </section>
 
-     <div style="display:none">
-         <div id="mailing-list">
-            <h2>Mailing List</h2>
-            <%= render 'mailing_list_form' %>
-         </div>
-         <!-- #mailing-list -->
-     </div>
-   </div>
-   <div class="clearfooter"></div>
- </div>
- <!-- wrapper -->
+    <section class="blog">
+        <div class="row">
+            <div class="span12">
+                <% @posts.each do |post| %>
+                    <h3 class="title"><%= post.title %></h3>
+                    <p><%= post.body %></p>
+                <% end %>
+           </div>
+        </div>
+    </section>
 
-<div id="footer">
-<!--  <div class="friends">Our Friends! 
-  <a href="#">Mount Royal Game Society</a> | 
-  <a href="#">OBX</a> | 
-  <a href="#">Technoculture Art and Games</a> | 
-  <a href="#">Sauropod Studio</a> | 
-  <a href="#">Phosfiend Systems</a>
-  </div>-->
-  <div class="text">
-  <div class="twitter">
-      Find us on Twitter: 
-      <a href="http://twitter.com/seemo">Seemo</a> | 
-      <a href="http://twitter.com/bzgeb">BZgeb</a>
-  </div>
+</div> <!-- /container -->
 
-  <div class="friends">
-      Check out our friends:
-      <a href="http://mrgs.ca/">MRGS</a> |
-      <a href="http://tag.hexagram.ca">TAG</a> |
-      <a href="http://www.sauropodstudio.com/">Sauropod Studio</a> |
-      <a href="http://www.joachimdespland.com">Joachim Despland</a>
-  </div>
-  </div>
+<footer class="footer navbar-fixed-bottom">
+    <div class="row">
+        <div class="span3">
+            <p>Find us on Twitter: 
+            <a href="http://twitter.com/seemo">Seemo</a> | 
+            <a href="http://twitter.com/bzgeb">BZgeb</a></p>
+        </div>
+        <div class="span6">
+            <p>Check out our friends:
+            <a href="http://mrgs.ca/">MRGS</a> |
+            <a href="http://tag.hexagram.ca">TAG</a> |
+            <a href="http://www.sauropodstudio.com/">Sauropod Studio</a> |
+            <a href="http://www.joachimdespland.com">Joachim Despland</a></p>
+        </div>
 
-  <div class="copy">Copyright &copy; 2012 KO-OP Mode Inc.</div>
-</div>
+        <div class="span3">
+            <p>Copyright &copy; 2012 KO-OP Mode Inc.</p>
+        </div>
+    </div>
+</footer>
 
