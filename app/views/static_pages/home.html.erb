@@ -2,17 +2,16 @@
 <div class="container">
     <header>
         <%= image_tag("/assets/ko-opheader.png", :size=>"168x215") %>
+        <g:plusone></g:plusone>
     </header>
 
     <section>
         <div class="row">
             <div class="span6">
-                <h2 class="title"><%= @projects[0].name %></h2>
                 <%= image_tag(@projects[0].thumbnail.url, :size=>"600x380") %>
             </div>
 
             <div class="span6">
-                <h2 class="title"><%= @projects[1].name %></h2>
                 <%= image_tag(@projects[1].thumbnail.url, :size=>"600x380") %>
             </div>
         </div>
