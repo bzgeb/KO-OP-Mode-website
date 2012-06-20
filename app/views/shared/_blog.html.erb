@@ -1,0 +1,11 @@
+<section class="blog">
+    <div class="row">
+        <div class="span12">
+            <% posts.each do |post|%>
+                <h3 class="title"><%= post.title %></h3>
+                <h6>posted <%= post.updated_at.strftime "%Y-%m-%d %H:%M:%S" %></h6>
+                <p><%=raw post.body %></p>
+            <% end %>
+        </div>
+    </div>
+</section>

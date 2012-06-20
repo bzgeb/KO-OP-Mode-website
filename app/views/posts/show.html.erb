@@ -1,20 +1,8 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+    <%= render "shared/header" %>
+    
+    <%= render :partial => "shared/blog",
+               :locals  => {:posts => [@post]} -%>
+</div>
 
-<p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
-
-<p>
-  <b>Body:</b>
-  <%=raw @post.body %>
-</p>
-
-<p>
-  <b>Published:</b>
-  <%= @post.published %>
-</p>
-
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= render "shared/footer" %>

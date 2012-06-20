@@ -1,20 +1,6 @@
 <% provide(:title, 'Home') %>
 <div class="container">
-    <header>
-        <div class="row" style="padding-top:26px">
-            <div class="span4">
-                <%= image_tag("/assets/ko-opheader.png", :size=>"168x215") %>
-            </div>
-            <div class="span8" style="text-align:right">
-                <form class="form-inline">
-                    <input type="text" placeholder="Mailing List">
-                    <button type="submit" class="subscribe">Subscribe</button>
-                    <a href="#"><%= image_tag("/assets/twitter_icon2.jpg", :size=>"18x14") %></a>
-                    <a href="#"><%= image_tag("/assets/ko-opheader.png", :size=>"24x24") %></a>
-                </form>
-            </div>
-        </div>
-    </header>
+    <%= render "shared/header" %>
 
     <section>
         <div class="row">
@@ -28,37 +14,10 @@
         </div>
     </section>
 
-    <section class="blog">
-        <div class="row">
-            <div class="span12">
-                <% @posts.each do |post|%>
-                    <h3 class="title"><%= post.title %></h3>
-                    <h6>posted <%= post.updated_at.strftime "%Y-%m-%d %H:%M:%S" %></h6>
-                    <p><%=raw post.body %></p>
-                <% end %>
-            </div>
-        </div>
-    </section><!-- /blog -->
+    <%= render :partial => "shared/blog",
+               :locals => {:posts => @posts} -%>
+
 </div> <!-- /container -->
 
-<footer class="footer navbar-fixed-bottom">
-    <div class="row">
-        <div class="span3">
-            <p>Find us on Twitter: 
-            <a href="http://twitter.com/seemo">Seemo</a> | 
-            <a href="http://twitter.com/bzgeb">BZgeb</a></p>
-        </div>
-        <div class="span6">
-            <p>Check out our friends:
-            <a href="http://mrgs.ca/">MRGS</a> |
-            <a href="http://tag.hexagram.ca">TAG</a> |
-            <a href="http://www.sauropodstudio.com/">Sauropod Studio</a> |
-            <a href="http://www.joachimdespland.com">Joachim Despland</a></p>
-        </div>
-
-        <div class="span3">
-            <p>Copyright &copy; 2012 KO-OP Mode Inc.</p>
-        </div>
-    </div>
-</footer>
+<%= render "shared/footer" %>
 
