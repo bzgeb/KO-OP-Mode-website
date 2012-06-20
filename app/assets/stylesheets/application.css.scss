@@ -36,6 +36,9 @@ header {
     margin-bottom: 6px;
 }
 
+.title a {
+    color: #FFF;
+}
 
 .footer {
     background-color: $koopblue;
@@ -56,9 +59,14 @@ header {
     margin-bottom: 26px;
 }
 
+.post {
+    margin-bottom: 26px;
+}
+
 .subscribe {
     border-radius: 4px 4px 0 0;
     background-color: $koopblue;
     border: none;
     color: white;
 }
+
