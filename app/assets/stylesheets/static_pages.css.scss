@@ -1,267 +1,92 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
-html, body {
-	background: #FFFFFF;
-	font: normal small "Trebuchet MS", Arial, Helvetica, sans-serif;
-    height: 100%;
-}
-
-h1, h2, h3 {
-	font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-h1 {
-}
-
-h2 {
-}
-
-h3 {
-	margin-bottom: 1em;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: x-small;
-}
-
-p, blockquote, ul, ol {
-	margin-bottom: 2em;
-	line-height: 1.6em;
-}
-
-p {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 16px;
-}
-
-blockquote {
-	margin-left: 2em;
-	margin-right: 2em;
-	padding: 1em 1em 0 1em;
-	text-align: center;
-	font-style: italic;
-}
-
-ul {
-	list-style: none;
-}
-
-ul li {
-}
-
-ol {
-	list-style-position: inside;
-}
-
-ol li {
-}
-
-a {
-	color: #000;
-}
-
-a:visited {
-	color: #000;
-}
-
-a:hover {
-    background-color: #FFF;
-    color: #999;
-}
-
-img {
-	border: none;
-}
-
-/* Wrapper */
-#wrapper {
-	clear: both;
-	width: 700px;
-	margin: 0 auto;
-    min-height: 100%;
-    position: relative;
-    margin-bottom: -40px;
-}
-
-.clearfooter {
-    height: 40px;
-    clear: both;
-}
-
-/* Column Three */
-#col-three {
-	float: left;	
-	width: 690px;
-    margin-left: auto;
-    margin-right: auto;
-	padding-top: 10px;
-}
-
-/* Footer */
-#footer {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	clear: both;
-    background: #45A7CC;
+/* Subnav */
+.subnav {
     width: 100%;
-    height: 40px;
-    position: relative;
+    height: 36px;
+}
+.subnav .nav {
+    margin-bottom: 0;
+}
+.subnav .nav > li {
+    margin-right: 16px;
+    background-color: #3ACAEF;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+}
+.subnav .nav > li > a {
+    margin: 0;
+    padding-top:    11px;
+    padding-bottom: 11px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #fff;
+}
+.subnav .nav > li > a:hover {
+    background-color: #32ACCC;
 }
 
-#footer p {
-	margin: 0 auto;
-	font-size: small;
+.subnav .nav > .active > a,
+.subnav .nav > .active > a:hover {
+    padding-left: 13px;
+    color: #777;
+    background-color: #32ACCC;
+    border-right-color: #ddd;
+    border-left: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+    -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+}
+.subnav .nav > .active > a .caret,
+.subnav .nav > .active > a:hover .caret {
+    border-top-color: #777;
+}
+.subnav .nav > li:first-child > a,
+.subnav .nav > li:first-child > a:hover {
+    border-left: 0;
+    padding-left: 12px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+ }
+.subnav .nav > li:last-child > a {
+     border-right: 0;
+}
+.subnav .dropdown-menu {
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
 }
 
-#footer .text {
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+/* Fixed subnav on scroll, but only for 980px and up (sorry IE!) */
+@media (min-width: 980px) {
+    .subnav-fixed {
+        position: fixed;
+        top: 40px;
+        left: 0;
+        right: 0;
+        z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
+        border-color: #d5d5d5;
+        border-width: 0 0 1px; /* drop the border on the fixed edges */
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+        -moz-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+        box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+        filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); /* IE6-9 */
+    }
+    .subnav-fixed .nav {
+        width: 938px;
+        margin: 0 auto;
+        padding: 0 1px;
+    }
+    .subnav .nav > li:first-child > a,
+    .subnav .nav > li:first-child > a:hover {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
 }
 
-#footer .friends {
-    text-align: left;
-    margin-left: 0;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: auto;
-    width: 65%;
-    height: 85%;
-    float: left;
-    position: relative;
-}
-
-#footer .twitter {
-    text-align: left;
-    margin-left: 0;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: auto;
-    width: 35%;
-    height: 85%;
-    float: left;
-    position: relative;
-}
-
-#footer .copy {
-    text-align: right;
-    color: #000;
-    font-size: x-small;
-    margin-left: auto;
-    margin-right: 5px;
-    margin-top: 5px;
-    float: right;
-    width: 17%;
-}
-
-/* Project */
-#project-division {
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    border-top: 1px solid grey;
-    width: 90%;
-    height: 10px;
-    clear: both;
-}
-
-#project-container {
-    width: 100%;
-    margin: 0px auto;
-    clear: both;
-}
-
-#project-container h2 {
-    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-    margin-bottom: 50px;
-    font-size: 32px;
-}
-
-#project {
-    width: 340px;
-    float:left;
-    margin-bottom: 75px;
-}
-
-#project .title {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 22px;
-    text-align: center;
-    background-color: black;
-    color: #FFF;
-    width: 170px;
-    height: 28px;
-    position: absolute;
-    margin-left: 140px;
-    margin-top: -20px;
-}
-
-#project .image {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-/* Mailing list */
-#mailing-list {
-    clear:both;
-}
-
-#mailing-list h2 {
-    margin-bottom: 5px;
-}
-
-#mailing-list .label {
-    width: 75px;
-    float: left;
-}
-
-#mailing-list .textfield {
-    width: 125px;
-}
-
-/* About */
-#about {
-    margin-bottom: 100px;
-    height: 200px;
-    float: left;
-}
-
-#about .logo {
-    float: left;
-    width: 30%;
-    margin-right: 40px;
-}
-
-#about .text {
-    width: 40%;
-    float: left;
-    margin-top: 30px;
-}
-
-/* Menu */
-#menu {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: x-large;
-    text-align: left;
-    float:left;
-    width: 20%;
-    margin-top: 100px;
-    margin-left: 29px;
-}
-
-
-#response {
-    color: blue;
-}
-
-#response .error {
-    color: red;
-}
-
-
-#response .success {
-    color: green;
-}

@@ -1,0 +1,14 @@
+<section class="blog">
+    <div class="row">
+        <div class="span12">
+            <% posts.each do |post|%>
+                <div class="post">
+                    <h3 class="title"><%= link_to post.title, post %></a></h3>
+                    <h6>posted <%= post.updated_at.strftime "%Y-%m-%d %H:%M:%S" %></h6>
+                    <p><%=raw post.body %></p>
+                    <%= link_to "Tweet This", "http://twitter.com/home?status=#{post.title} on the @KOOPMode Blog #{url_for(:controller => 'posts', :action => 'show', :id => post.to_param, :only_path => false)}" %>
+                </div>
+            <% end %>
+        </div>
+    </div>
+</section>
