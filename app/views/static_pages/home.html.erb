@@ -1,23 +1,5 @@
 <% provide(:title, 'Home') %>
 <div class="container">
     <%= render "shared/header" %>
-
-    <section>
-        <div class="row">
-            <div class="span6">
-                <%= image_tag(@projects[0].thumbnail.url, :size=>"600x380") %>
-            </div>
-
-            <div class="span6">
-                <%= image_tag(@projects[1].thumbnail.url, :size=>"600x380") %>
-            </div>
-        </div>
-    </section>
-
-    <%= render :partial => "shared/blog",
-               :locals => {:posts => @posts} -%>
-
 </div> <!-- /container -->
-
-<%= render "shared/footer" %>
 
