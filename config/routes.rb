@@ -1,4 +1,6 @@
 KoOpmode::Application.routes.draw do
+  resources :posts
+
   resources :projects
 
   match "description/:id" => "projects#description"

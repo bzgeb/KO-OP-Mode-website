@@ -14,3 +14,25 @@
 //= require jquery_ujs
 //= require_tree .
 //= require fancybox
+
+$(document).ready(function() {
+
+    $(window).resize(function(e) {
+        resize_page();
+    });
+    resize_page();
+
+//    (function() {
+//        var h = $(".logo").height();
+//    })();
+});
+
+function resize_page()
+{
+    var h = $(window).height();
+
+    var footer_height = $("footer").height();
+    var header_height = $("header").height();
+
+    $(".main").css('min-height', h - footer_height - header_height);
+}
