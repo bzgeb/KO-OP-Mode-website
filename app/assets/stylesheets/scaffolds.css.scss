@@ -11,7 +11,6 @@
 }
 
 body {
-    background-color: white;
     color: #FFF;
     font-family: 'Arimo', Helvetica, sans-serif;
     font-size: 16px;
@@ -50,6 +49,20 @@ h1 {
     padding-top: 60px;
 }
 
+
+
+.ko-op {
+    background-color: white;
+}
+
+.ko-op p {
+    color: black;
+}
+
+.ko-op .right-col {
+    text-align:right;
+}
+
 .red-rover {
     background-color: black;
     background-image: url('starbg.png');
@@ -59,18 +72,19 @@ h1 {
     margin-top: 60px;
 }
 
-.red-rover p {
-    width: 350px;
+.red-rover .right-col {
+    text-align:right;
 }
 
+
 .skipping-stones {
-    background-color: purple;
+    background-color: #400080;
 }
 
 .skipping-stones .logo {
     margin-top: 113px;
 }
 
-.skipping-stones p {
-    width: 350px;
+.skipping-stones .right-col {
+    text-align:right;
 }
