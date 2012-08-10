@@ -1,5 +1,54 @@
 <% provide(:title, 'Home') %>
-<div class="container">
-    <%= render "shared/header" %>
-</div> <!-- /container -->
+<!-- KO-OP -->
+<div class="row" style="background-color: grey;">
+    <div class="span12 center top-med-spacer bottom-med-spacer">
+        <div class="row">
+            <div class="span6" >
+                <%= image_tag("ko-opicon.png", :class=>"bottom-small-spacer") %>
+                <center>
+                    <p style="width:350px;">KO-OP Mode is a new studio based out of Montreal.</p>
+                </center>
+            </div>
+            <div class="span6">
+                <%= image_tag("twitter.png", :class=>"bottom-small-spacer") %>
+                <%= image_tag("fb.png", :class=>"bottom-small-spacer") %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Red Rover -->
+<div class="row red-rover">
+    <div class="span12 center top-med-spacer bottom-med-spacer">
+        <div class="row">
+            <div class="span6 logo">
+                <%= image_tag("RedRoverLogo.png", :class=>"bottom-small-spacer") %>
+                <center>
+                    <p>Red Rover is an experimental first person adventure game about human achievement and the mission to Mars.</p>
+                </center>
+            </div>
+            <div class="span6">
+                <iframe width="380" height="275" src="http://www.youtube.com/embed/4y5ppf9NUDM" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Skipping Stones -->
+<div class="row skipping-stones">
+    <div class="span12 center top-med-spacer bottom-med-spacer">
+        <div class="row">
+            <div class="span6 logo">
+                <%= image_tag("SkippingStonesLogo.png", :class=>"bottom-small-spacer") %>
+                <center>
+                    <p>Skipping Stones is a sound and poety toy about loss and self reflection. Throw stones and create music.</p>
+                </center>
+            </div>
+            <div class="span6">
+                <%= image_tag("stones.png") %>
+            </div>
+        </div>
+    </div>
+</div>
 

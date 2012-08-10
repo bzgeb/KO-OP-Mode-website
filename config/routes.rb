@@ -1,9 +1,9 @@
 KoOpmode::Application.routes.draw do
-  resources :posts
+  #resources :posts
 
-  resources :projects
+  #resources :projects
 
-  match "description/:id" => "projects#description"
+  #match "description/:id" => "projects#description"
   get "static_pages/home"
   post "mailing_list/subscribe"
 
