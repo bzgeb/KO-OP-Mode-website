@@ -5,7 +5,6 @@ KoOpmode::Application.routes.draw do
 
   #match "description/:id" => "projects#description"
   get "static_pages/home"
-  post "mailing_list/subscribe"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
