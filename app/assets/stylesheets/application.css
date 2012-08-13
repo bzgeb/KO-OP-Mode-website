@@ -13,4 +13,5 @@
  *= require bootstrap.min
  *= require bootstrap-responsive.min
  *= require scaffolds
+ *= require_tree .
 */

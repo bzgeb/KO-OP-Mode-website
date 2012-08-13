@@ -91,10 +91,13 @@ RetinaImage.prototype.swap = function(path) {
       // Once the the image has loaded we know we 
       // can grab the proper dimensions of the original image
       // and go ahead and swap in the new image path and apply the dimensions
-      if (that.el.getAttribute('class') !== 'ignore-resize') {
-        that.el.setAttribute('width', that.el.offsetWidth);
-        that.el.setAttribute('height', that.el.offsetHeight);
-      }
+//      if (that.el.getAttribute('class').indexOf('ignore-resize') === -1) {
+//        that.el.setAttribute('width', that.el.offsetWidth);
+//        that.el.setAttribute('height', that.el.offsetHeight);
+//      }
+//      else {
+//        alert("Ignoring resize");
+//      }
       that.el.setAttribute('src', path);
     }
   }
