@@ -5,16 +5,28 @@
         <div class="row top-med-spacer bottom-med-spacer">
             <div class="span12 center">
                 <div class="row">
-                    <div class="span12" >
+                    <!-- Desktop -->
+                    <div class="span12 hidden-phone" >
                         <%= image_tag("ko-op.png", :class=>"bottom-small-spacer") %>
                         <p>KO-OP Mode is a new studio based out of Montreal.</p>
                     </div>
+                    <!-- Phone -->
+                    <div class="span12 visible-phone" >
+                        <%= image_tag("ko-op.png", :class=>"bottom-small-spacer", :width=>"120px") %>
+                        <p>KO-OP Mode is a new studio based out of Montreal.</p>
+                    </div>
+
                 </div>
                 <div class="row">
-                    <div class="span12">
+                    <div class="span12 hidden-phone">
                         <%= image_tag("twitter.png", :class=>"bottom-small-spacer") %>
                         <%= image_tag("fb.png", :class=>"bottom-small-spacer") %>
                     </div>
+                    <div class="span12 visible-phone">
+                        <%= image_tag("twitter.png", :class=>"bottom-small-spacer", :width=>"60px") %>
+                        <%= image_tag("fb.png", :class=>"bottom-small-spacer", :width=>"60px") %>
+                    </div>
+
                 </div>
             </div>
         </div>
