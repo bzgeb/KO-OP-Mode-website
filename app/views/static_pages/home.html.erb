@@ -6,25 +6,25 @@
             <div class="span12 center">
                 <div class="row">
                     <!-- Desktop -->
-                    <div class="span12 hidden-phone" >
-                        <%= image_tag("ko-op.png", :class=>"bottom-small-spacer") %>
-                        <p>KO-OP Mode is a new studio based out of Montreal.</p>
+                    <div class="span4 offset4 hidden-phone hidden-tablet" >
+                        <%= image_tag("ko-op.png", :class=>"bottom-small-spacer", :width=>"140px") %>
+                        <p>KO-OP Mode is a new studio based out of Montreal. Stay in touch with us!</p>
                     </div>
-                    <!-- Phone -->
-                    <div class="span12 visible-phone" >
-                        <%= image_tag("ko-op.png", :class=>"bottom-small-spacer", :width=>"120px") %>
-                        <p>KO-OP Mode is a new studio based out of Montreal.</p>
+                    <!-- Phone & Tablet -->
+                    <div class="span4 offset4 visible-phone visible-tablet" >
+                        <%= image_tag("ko-op.png", :class=>"bottom-small-spacer", :width=>"140px") %>
+                        <p>KO-OP Mode is a new studio based out of Montreal. Stay in touch with us!</p>
                     </div>
 
                 </div>
                 <div class="row">
                     <div class="span12 hidden-phone">
-                        <%= image_tag("twitter.png", :class=>"bottom-small-spacer") %>
-                        <%= image_tag("fb.png", :class=>"bottom-small-spacer") %>
+                        <a href="http://www.twitter.com/koopmode"><%= image_tag("twitter.png", :class=>"bottom-small-spacer", :width=>"48px", :style=>"margin-right:8px") %></a>
+                        <a href="https://www.facebook.com/koopmode"><%= image_tag("fb.png", :class=>"bottom-small-spacer", :width=>"48px", :style=>"margin-left:8px") %></a>
                     </div>
                     <div class="span12 visible-phone">
-                        <%= image_tag("twitter.png", :class=>"bottom-small-spacer", :width=>"60px") %>
-                        <%= image_tag("fb.png", :class=>"bottom-small-spacer", :width=>"60px") %>
+                        <%= image_tag("twitter.png", :class=>"bottom-small-spacer", :width=>"48px", :style=>"margin-right:8px") %>
+                        <%= image_tag("fb.png", :class=>"bottom-small-spacer", :width=>"48px", :style=>"margin-left:8px") %>
                     </div>
 
                 </div>
