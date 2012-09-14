@@ -2,15 +2,10 @@
 <!-- KO-OP -->
 <div class="ko-op">
     <div class="container">
-        <div class="row top-med-spacer">
+        <!-- Phone & Tablet -->
+        <div class="row top-med-spacer visible-phone visible-tablet">
             <div class="span12 center">
                 <div class="row">
-                    <!-- Desktop -->
-                    <div class="span4 offset4 hidden-phone hidden-tablet" >
-                        <%= image_tag("ko-op.png", :class=>"bottom-small-spacer", :width=>"140px") %>
-                        <p>KO-OP Mode is a new studio based out of Montreal. Stay in touch with us!</p>
-                    </div>
-                    <!-- Phone & Tablet -->
                     <div class="span4 offset4 visible-phone visible-tablet" >
                         <%= image_tag("ko-op.png", :class=>"bottom-small-spacer", :width=>"140px") %>
                         <p>KO-OP Mode is a new studio based out of Montreal. Stay in touch with us!</p>
@@ -18,11 +13,6 @@
 
                 </div>
                 <div class="row">
-                    <div class="span12 hidden-phone">
-                        <a href="http://www.twitter.com/koopmode" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Twitter']);"><%= image_tag("twitter.png", :class=>"bottom-small-spacer", :width=>"48px", :style=>"margin-right:8px") %></a>
-                        <a href="https://www.facebook.com/koopmode" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Facebook']);"><%= image_tag("fb.png",    :class=>"bottom-small-spacer", :width=>"48px", :style=>"margin-left:8px;margin-right:8px") %></a>
-                        <a href="mailto:contact@ko-opmode.com" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Mail']);"><%= image_tag("mail.png", :class=>"bottom-small-spacer", :width=>"48px", :style=>"margin-left:8px") %></a>
-                    </div>
                     <div class="span12 visible-phone">
                         <a href="http://www.twitter.com/koopmode" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Twitter-phone']);"><%= image_tag("twitter.png", :class=>"bottom-small-spacer", :width=>"48px", :style=>"margin-right:8px") %></a>
                         <a href="https://www.facebook.com/koopmode" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Facebook-phone']);"><%= image_tag("fb.png",    :class=>"bottom-small-spacer", :width=>"48px", :style=>"margin-left:8px;margin-right:8px") %></a>
@@ -30,6 +20,19 @@
                     </div>
 
                 </div>
+            </div>
+        </div>
+
+        <!-- Desktop -->
+        <div class="row top-med-spacer visible-desktop" style="margin-bottom: -65px">
+            <div class="span9">
+                <%= image_tag("ko-op.png", :class=>"bottom-small-spacer", :width=>"80px") %>
+            </div>
+
+            <div class="span3">
+                <a href="http://www.twitter.com/koopmode" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Twitter']);"><%= image_tag("twitter.png", :class=>"bottom-small-spacer", :width=>"48px", :style=>"margin-right:8px") %></a>
+                <a href="https://www.facebook.com/koopmode" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Facebook']);"><%= image_tag("fb.png",    :class=>"bottom-small-spacer", :width=>"48px", :style=>"margin-left:8px;margin-right:8px") %></a>
+                <a href="mailto:contact@ko-opmode.com" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Mail']);"><%= image_tag("mail.png", :class=>"bottom-small-spacer", :width=>"48px", :style=>"margin-left:8px") %></a>
             </div>
         </div>
     </div>
