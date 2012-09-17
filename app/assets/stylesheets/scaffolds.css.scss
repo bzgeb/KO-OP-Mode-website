@@ -103,14 +103,14 @@ a .none {
     text-decoration: none;
 }
 
-a {
-    color: #444;
-    text-decoration: underline;
-}
-
 .social {
     font-size: 14px;
     color: #444;
+}
+
+.social a {
+    color: #444;
+    text-decoration: underline;
 }
 
 .social h3 {
@@ -119,4 +119,9 @@ a {
 
 .social .small p {
     font-size: 12px;
+}
+
+.copyright p {
+    color: #BBB;
+    font-size: 11px;
 }

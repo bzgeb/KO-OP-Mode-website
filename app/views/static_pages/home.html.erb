@@ -2,37 +2,36 @@
 <!-- KO-OP -->
 <div class="ko-op">
     <div class="container">
-        <!-- Phone & Tablet -->
-        <div class="row top-med-spacer visible-phone visible-tablet">
+        <!-- Phone -->
+        <div class="row top-med-spacer visible-phone">
             <div class="span12 center">
                 <div class="row">
-                    <div class="span4 offset4 visible-phone visible-tablet" >
+                    <div class="span4 offset4 bottom-small-spacer" >
                         <%= image_tag("ko-op.png", :class=>"bottom-small-spacer", :width=>"140px") %>
                         <p>KO-OP Mode is a new studio based out of Montreal. Stay in touch with us!</p>
                     </div>
-
                 </div>
-                <div class="row">
-                    <div class="span12 visible-phone">
-                        <a href="http://www.twitter.com/koopmode" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Twitter-phone']);"><%= image_tag("twitter.png", :class=>"bottom-small-spacer", :width=>"48px", :style=>"margin-right:8px") %></a>
-                        <a href="https://www.facebook.com/koopmode" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Facebook-phone']);"><%= image_tag("fb.png",    :class=>"bottom-small-spacer", :width=>"48px", :style=>"margin-left:8px;margin-right:8px") %></a>
-                        <a href="mailto:contact@ko-opmode.com" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Mail-phone']);"><%= image_tag("mail.png", :class=>"bottom-small-spacer", :width=>"48px", :style=>"margin-left:8px") %></a>
-                    </div>
 
+                <div class="row">
+                    <div class="span12 bottom-small-spacer">
+                        <a href="http://www.twitter.com/koopmode" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Twitter-phone']);"><%= image_tag("twitter.png", :width=>"48px", :style=>"margin-right:8px") %></a>
+                        <a href="https://www.facebook.com/koopmode" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Facebook-phone']);"><%= image_tag("fb.png", :width=>"48px", :style=>"margin-left:8px;margin-right:8px") %></a>
+                        <a href="mailto:contact@ko-opmode.com" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Mail-phone']);"><%= image_tag("mail.png", :width=>"48px", :style=>"margin-left:8px") %></a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Desktop -->
-        <div class="row top-small-spacer visible-desktop" style="margin-bottom: -80px">
-            <div class="span9">
-                <%= image_tag("ko-op.png", :class=>"bottom-small-spacer", :width=>"112px", :style=>"margin-left:-10px") %>
+        <!-- Desktop & Tablet -->
+        <div class="row top-small-spacer hidden-phone" style="margin-bottom: -80px">
+            <div class="span9 bottom-small-spacer">
+                <%= image_tag("ko-op.png", :style=>"margin-left:-10px", :width=>"112px", :height=>"138px") %>
             </div>
 
-            <div class="span3" style="margin-top:10px">
-                <a href="http://www.twitter.com/koopmode" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Twitter']);"><%= image_tag("twitter.png", :class=>"bottom-small-spacer",  :style=>"margin-right:8px") %></a>
-                <a href="https://www.facebook.com/koopmode" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Facebook']);"><%= image_tag("fb.png",    :class=>"bottom-small-spacer", :style=>"margin-left:8px;margin-right:8px") %></a>
-                <a href="mailto:contact@ko-opmode.com" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Mail']);"><%= image_tag("mail.png", :class=>"bottom-small-spacer", :style=>"margin-left:8px") %></a>
+            <div class="span3 bottom-small-spacer" style="margin-top:10px;">
+                <a href="http://www.twitter.com/koopmode" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Twitter']);"><%= image_tag("twitter.png", :style=>"margin-right:0px", :width=>"48px", :height=>"40px") %></a>
+                <a href="https://www.facebook.com/koopmode" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Facebook']);"><%= image_tag("fb.png", :style=>"margin-left:14px;margin-right:0px", :width=>"40px", :height=>"40px") %></a>
+                <a href="mailto:contact@ko-opmode.com" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'Mail']);"><%= image_tag("mail.png", :style=>"margin-left:14px", :width=>"40px", :height=>"40px") %></a>
             </div>
         </div>
     </div>
@@ -45,9 +44,9 @@
             <div class="span12 center">
                 <div class="row">
                     <a href="http://www.flyredrover.com" onClick="_gaq.push(['_trackEvent', 'Links', 'click', 'RedRover']);">
-                        <div class="span5 logo">
-                            <%= image_tag("redrover.png", :class=>"bottom-small-spacer") %>
-                            <p class="none">Red Rover is an experimental game about space exploration and the human voyage to Mars.</p>
+                        <div class="span5 logo bottom-small-spacer">
+                            <%= image_tag("redrover.png", :width=>"380px", :height=>"74px") %>
+                            <p style="text-decoration:none" class="none">Red Rover is an experimental game about space exploration and the human voyage to Mars.</p>
                         </div>
                     </a>
                     <div class="span5 offset2">
@@ -65,12 +64,12 @@
         <div class="row top-med-spacer bottom-med-spacer">
             <div class="span12 center">
                 <div class="row">
-                    <div class="span5 logo">
-                        <%= image_tag("skippingstones.png", :class=>"bottom-small-spacer") %>
+                    <div class="span5 logo bottom-small-spacer">
+                        <%= image_tag("skippingstones.png", :width=>"380px", :height=>"35px") %>
                         <p>Skipping Stones is a sound and poetry toy about loss and self reflection. Throw stones and create music.</p>
                     </div>
                     <div class="span5 offset2">
-                        <%= image_tag("stones.png") %>
+                        <%= image_tag("stones.png", :width=>"380px", :height=>"275px") %>
                     </div>
                 </div>
             </div>
@@ -108,6 +107,17 @@
             <div class="span3 small">
                 <h3>About Us</h3>
                 <p>KO-OP Mode is a new bedroom studio based out of Montreal.  We like cats, nebulas, and interactive audio experiments.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Copyright -->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div span="span3" style="text-align:right; margin-top:28px">
+                <p>Copyright 2012 KO-OP Mode inc.</p>
             </div>
         </div>
     </div>
