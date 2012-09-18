@@ -94,7 +94,35 @@ h1 {
     padding-right:10px;
 }
 
+.none {
+    text-decoration: none;
+}
+
 a .none {
     color: #FFF;
     text-decoration: none;
 }
+
+.social {
+    font-size: 14px;
+    color: #444;
+}
+
+.social a {
+    color: #444;
+    text-decoration: underline;
+}
+
+.social h3 {
+    margin-bottom: 16px;
+}
+
+.social .small p {
+    font-size: 12px;
+}
+
+.copyright p {
+    color: #BBB;
+    font-size: 11px;
+}
+
